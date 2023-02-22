@@ -533,6 +533,11 @@ public abstract class AbstractTemplatesPage extends Page implements ITemplatesPa
 			fContextMenu.dispose();
 		if (fTemplateChangeListener != null)
 			getTemplatePreferenceStore().removePropertyChangeListener(fTemplateChangeListener);
+
+//		if (fPreferencePageAction != null) {
+//			IMenuManager menuManager = getSite().getActionBars().getMenuManager();
+//			menuManager.remove(fPreferencePageAction.getId());
+//		}
 		super.dispose();
 	}
 
